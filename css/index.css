@@ -1,7 +1,9 @@
 body {
   /* Typography Declarations */
-  background-color: #ceb5b5;
-  color: rgb(27, 3, 73);
+  /* background-color: #ceb5b5;
+  color: rgb(27, 3, 73); */
+  background-color: #acacac;
+  color: #3d3437;
   font-size: 1em;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   margin: 10px;
@@ -11,17 +13,22 @@ body h1 {
   text-align: center;
   font-size: 46px;
   font-weight: bold;
-  border: thick double #f0ecf6;
-  background-color: #984482;
+  /* border: thick double #f0ecf6;
+  background-color: #984482; */
+  border: thick double #7c7883;
+  background-color: #939393;
   padding-top: 80px;
 
 }
 h2 {
   font-size: 28px;
   font-weight: 400;
-  color:rgb(27, 3, 73);
+  color: #250211;
   border: thick double #f3edf0;
-  background-color: #8e536c;
+  background-color: #f2efee;
+  /* color:rgb(27, 3, 73);
+  border: thick double #f3edf0;
+  background-color: #8e536c; */
 }
 /* #nav-header {
   padding: 4px 4px;
@@ -36,7 +43,8 @@ h2 {
 /* The navigation bar */
 #nav-header {
   overflow: hidden;
-  background-color: rgb(83, 81, 81);
+  background-color: #3d3437;
+  /* background-color: rgb(83, 81, 81); */
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -46,7 +54,8 @@ h2 {
 #nav-header a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #d6cece;
+  /* color: #f2f2f2; */
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -54,8 +63,9 @@ h2 {
 
 /* Change background on mouse-over */
 #nav-header a:hover {
-  background: #ddd;
-  color: darkgray;
+  /* background: #ddd;<<<<<<-----------do not use- its a clunky box over the nav links */
+  /* color: darkgray; */
+  color: #b3adad;
 }
 
 /* Main content */
@@ -63,14 +73,17 @@ body {
   margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
 .section {
-  color:#3e021b
+  /* color:#3e021b */
+  color:#46413f
 } 
 #skills {
   border: double;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
+  background-color: #f3e9e9;
 }
 #skills li {
-  background-color: rgb(234, 247, 248);
+  /* background-color: rgb(234, 247, 248); */
+  background-color: rgb(201 208 208);
   border: 2px;
   padding: 2px;
   margin: 1px;
@@ -86,44 +99,56 @@ body {
 }
 #skillset {
   border: double;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
+  background-color: #f2efee;
 }
 #contact {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: rgb(234, 247, 248);
+  /* background-color: rgb(234, 247, 248); */
+  background-color: #f2efee;
   border: 2px;
   padding: 2px;
   margin: 1px;
 }
 .form td {
   font-size: medium;
-  color:#984482;
-  background-color: aqua;
+  /* color:#984482;
+  background-color: aqua; */
+  color:#a99ea6;
+  background-color: #aea9a8;
   margin: auto;
   padding: auto;
 }
 #submit-button {
-  background-color: grey;
+  /* background-color: grey;
+  font-weight: bold;
+  color: black; */
+  background-color: #b9b7c4;
   font-weight: bold;
   color: black;
   margin:auto;
   padding: auto;
 }
 #messages ul {
-  border:rgb(27, 3, 73);
+  /* border:rgb(27, 3, 73);
   background-color: aliceblue;
-  color:#984482;
+  color:#984482; */
+  border:rgb(75 73 77);
+  background-color: #dee2e6;
+  color:#555b8b;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 #footer {
-  color: blueviolet;
+  /* color: blueviolet; */
+  color: #260841;
   text-align: center;
 }
 @media only screen and (max-width: 600px) {
   body {
       width: 100%;
-      background-color: rgb(239, 207, 241);
+      /* background-color: rgb(239, 207, 241); */
+      background-color: rgb(186 185 186);
   }
 }
