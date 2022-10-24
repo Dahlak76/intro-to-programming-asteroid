@@ -53,23 +53,46 @@ githubRequest.addEventListener('load', function() {
   console.log(repositories);
 //});
 let projectSection = document.getElementById('projects');
-let projectList = projectSection.querySelector('ul');
+let projectsList = projectSection.querySelector('ul');
 
 for(let i = 0; i < repositories.length; i++){
   let project = document.createElement('li');
-  project.innerHTML = repositories[i].name;
-  projectList.appendChild(project);
+  if (repositories[i].description !== null) {
+    let projectTitle = document.createElement("h3");
+    projectTitle.innerText = repositories[i].name;
+    let projectDescription = document.createElement("p");
+    projectDescription.innerText = repositories[i].description;
+    project.appendChild(projectTitle);
+    projectsList.appendChild(project);
+    project.appendChild(projectDescription);
+
+  }
 }
 });
+// for (let i = 0; i < projects.length; i++) {
+//   let project = document.createElement("li");
+//   if (projects[i].description != null) {
+//     let projectTitle = document.createElement("h1");
+//     projectTitle.innerText = projects[i].name;
 
-fetch('https://api.github.com/users/dahlak76/repos')
-.then(response => response.json())
-.then(load => {
-  const projectSection = document.getElementById("projects");
-  const projectList= projectSection.querySelector("ul");
-  for (let i = 0; i < load.length; i++) {
-      const project = document.createElement("li");
-      project.innerText = load[i].name;
-      projectList.appendChild(project);
-  }   
-})
+//     let projectDescription = document.createElement("p");
+//     projectDescription.innerText = projects[i].description;
+
+//     project.appendChild(projectTitle);
+//     projectsList.appendChild(project);
+//     project.appendChild(projectDescription);
+//   }
+// }
+
+
+// fetch('https://api.github.com/users/dahlak76/repos')
+// .then(response => response.json())
+// .then(load => {
+//   const projectSection = document.getElementById("projects");
+//   const projectList= projectSection.querySelector("ul");
+//   for (let i = 0; i < load.length; i++) {
+//       const project = document.createElement("li");
+//       project.innerText = load[i].name;
+//       projectList.appendChild(project);
+//   }   
+// })
