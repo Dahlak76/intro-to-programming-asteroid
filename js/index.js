@@ -69,20 +69,7 @@ for(let i = 0; i < repositories.length; i++){
   }
 }
 });
-// for (let i = 0; i < projects.length; i++) {
-//   let project = document.createElement("li");
-//   if (projects[i].description != null) {
-//     let projectTitle = document.createElement("h1");
-//     projectTitle.innerText = projects[i].name;
 
-//     let projectDescription = document.createElement("p");
-//     projectDescription.innerText = projects[i].description;
-
-//     project.appendChild(projectTitle);
-//     projectsList.appendChild(project);
-//     project.appendChild(projectDescription);
-//   }
-// }
 
 
 // fetch('https://api.github.com/users/dahlak76/repos')
