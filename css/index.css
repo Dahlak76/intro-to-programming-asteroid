@@ -73,6 +73,9 @@ h2 {
 body {
   margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
+p {
+  text-indent: 10px;
+}
 .section {
   /* color:#3e021b */
   color:#46413f
